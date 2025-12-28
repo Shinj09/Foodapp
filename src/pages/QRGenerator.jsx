@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const QRGenerator = () => {
-  const [restaurantName, setRestaurantName] = useState('HIMALAYAN TASTE RESTAURANT');
-  const [baseUrl, setBaseUrl] = useState('https://food-ordering-app.vercel.app');
+  const [restaurantName, setRestaurantName] = useState('My Fucking Restaurant');
+  const [baseUrl, setBaseUrl] = useState('https://food-app-gilt-beta.vercel.app');
   const [numberOfTables, setNumberOfTables] = useState(10);
   const [qrCodes, setQrCodes] = useState([]);
 
