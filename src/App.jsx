@@ -4,19 +4,19 @@ import Menu from './pages/Menu';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Confirmation from './pages/Confirmation';
+import QRGenerator from './pages/QRGenerator';
 
 function App() {
   return (
     <CartProvider>
       <Router>
-        <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
-          <Routes>
-            <Route path="/" element={<Menu />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/confirmation" element={<Confirmation />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Menu />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/confirmation" element={<Confirmation />} />
+          <Route path="/admin/qr" element={<QRGenerator />} />
+        </Routes>
       </Router>
     </CartProvider>
   );
